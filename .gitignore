@@ -1,0 +1,9 @@
+# Dependencies
+/node_modules
+
+# Secret Files
+credentials.json
+*.json
+
+# macOS
+.DS_Store 
