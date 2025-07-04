@@ -3,7 +3,6 @@
 
 # Secret Files
 credentials.json
-*.json
 
 # macOS
 .DS_Store 
