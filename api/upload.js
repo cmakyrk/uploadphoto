@@ -18,7 +18,7 @@ const drive = google.drive({ version: 'v3', auth });
 // 'public' klasöründeki statik dosyaları sunmak için (opsiyonel, Vercel bunu zaten yapar)
 app.use(express.static('public'));
 
-app.post('/api/upload', upload.array('files'), async (req, res) => {
+app.post('/', upload.array('files'), async (req, res) => {
   if (!req.files || req.files.length === 0) {
     return res.status(400).json({ success: false, message: 'Lütfen en az bir dosya seçin.' });
   }
